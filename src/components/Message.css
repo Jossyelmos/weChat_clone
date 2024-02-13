@@ -1,0 +1,51 @@
+.message {
+    display: flex;
+    margin-bottom: 5px;
+    max-width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.message_avatar {
+    margin: 5px 0;
+}
+
+.message_info {
+    font-size: 12px;
+    padding: 8px;
+    background-color: white;
+    height: fit-content;
+}
+
+.message_name {
+    font-size: 10px;
+    color: #96a2a9;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+}
+
+.message_recievedArrow {
+    margin-left: -4px;
+    margin-right: -11px;
+    color: white;
+}
+
+.message_sentArrow {
+    order: 2;
+    margin-left: -11px;
+    margin-right: -4px;
+    color: var(--color-primary)
+}
+
+.message_sent > .message_avatar {
+    order: 3;
+}
+
+.message_sent .message_info {
+    background-color: var(--color-primary);
+}
+
+.message.message_sent {
+    align-self: flex-end;
+}

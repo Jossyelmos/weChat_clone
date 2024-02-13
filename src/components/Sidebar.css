@@ -1,0 +1,61 @@
+.sidebar {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #eeeeee;
+}
+
+.sidebar_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #ebebeb;
+    height: 55px;
+}
+
+.sidebar_header > h3 {
+    font-size: 15px;
+}
+
+.sidebar_headerIcons > * {
+    padding-left: 15px;
+}
+
+.sidebar_header svg:hover,
+.sidebar_option:hover {
+    color: #3caf36;
+    cursor: pointer;
+}
+
+.sidebar_chats {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar_footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f6f6;
+    height: 56px;
+    align-items: center;
+}
+
+.sidebar_option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar_caption {
+    font-size: 10px;
+}
+
+.sidebar_option .sidebar_option_hover,
+.sidebar_option:hover .sidebar_option_noHover {
+    display: none;
+}
+
+.sidebar_option:hover .sidebar_option_hover {
+    display: block;
+}
