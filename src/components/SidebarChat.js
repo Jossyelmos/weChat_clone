@@ -44,6 +44,8 @@ function SidebarChat({ id, name }) {
     console.log("Chrome cannot play sound without user interaction first")});
       }
     }
+
+    // eslint-disable-next-line
   }, [messages]);
 
   return (
